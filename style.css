@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e272e;
+}
+
+button {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  margin-top: 30px;
+}
+
+textarea {
+  height: 300px;
+  resize: none;
+  margin-bottom: 50px;
+  outline: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 20px;
+  border: 1px solid rgba(153, 153, 153, 0.705);
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 55px;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+
+.buttons button:focus {
+  box-shadow: none;
+}
+
+.langs-title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  position: relative;
+}
+
+.langs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.langs button {
+  margin: 20px 30px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.langs button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button:focus {
+  color: #0d6efd;
+}
+
+button:focus::before {
+  width: 100%;
+  background-color: #0d6efd;
+}
+
+.notice {
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 12px;
+  font-family: monospace;
+  background-color: #000;
+  margin-top: 10px;
+}
+/* CRYPTON. DEVELOPERS : ZAFAR, rapCoder */
