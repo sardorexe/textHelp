@@ -8,6 +8,10 @@ body {
   background-color: #1e272e;
 }
 
+.warning {
+  display: none;
+}
+
 button {
   font-family: monospace;
   font-size: 18px;
@@ -114,5 +118,26 @@ button:focus::before {
   font-family: monospace;
   background-color: #000;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+  .warning {
+    display: flex;
+    min-height: 100vh;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .warning h4 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+    background-color: #000;
+    text-align: center;
+  }
 }
 /* CRYPTON. DEVELOPERS : ZAFAR, rapCoder */
